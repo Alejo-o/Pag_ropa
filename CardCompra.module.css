@@ -1,0 +1,68 @@
+.card-compra h3, .card-compra p, .card-compra b {
+  color: #111 !important;
+}
+/* Estilos para la vista de compra de producto */
+.card-compra {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.talla-btn {
+  margin: 0 8px;
+  padding: 8px 20px;
+  background: #fff;
+  color: #13020f;
+  border: 1px solid #13020f;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.talla-btn.selected {
+  background: #13020f;
+  color: #fff;
+}
+
+.regresar-btn {
+  margin-top: 30px;
+  padding: 10px 40px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.agregar-btn {
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 10px 40px;
+  background: #13020f;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.carrito-table {
+  margin-top: 40px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.carrito-table th, .carrito-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.eliminar-btn {
+  background: #c00;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 5px 15px;
+  cursor: pointer;
+}

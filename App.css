@@ -1,0 +1,167 @@
+/* Elimina restricciones de ancho y padding en root */
+#root {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -10px;
+}
+  
+h2, h3 {
+  color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+    
+  }
+  
+/* Estilos de encabezado */
+header {
+  background-color: #000000;
+  padding: 30px 0;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 15px;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+  a {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 15px 8px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    transition: 0.5s;
+    border-radius: 0.2rem;
+  }
+
+  a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ffffff;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  /* Estilos de secciones */
+  section {
+    padding: 20px;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  .product img {
+    width: 170px;
+    height: 170px;
+  }
+  
+  .product h3 {
+    margin: 10px 0;
+  }
+  
+  .product p {
+    margin: 15px 0;
+  }
+  
+  .product button {
+    padding: 8px 40px;
+    background-color: #13020f;
+    color: #fafbfc;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 0.2rem;
+  }
+
+  .product button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+  }
+  
+/* Estilos de pie de página */
+footer {
+  background-color: #000000;
+  padding: 10px 0;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+  .container {
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  section {
+    justify-content: center;
+    align-items: center;
+  }
