@@ -5,31 +5,26 @@ import './App.css';
 
 function App() {
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
-  const [carrito, setCarrito] = useState(() => {
-    const guardado = localStorage.getItem('carrito');
-    return guardado ? JSON.parse(guardado) : [];
-  });
   const [mostrarCarritoCards, setMostrarCarritoCards] = useState(false);
 
   const productos = [
     {
-      img: 'producto1.jpg',
+      img: 'https://res.cloudinary.com/dcut7k58h/image/upload/v1755134670/producto1_ztk1dw.jpg',
       nombre: 'T-shit ¨norbita¨',
       precio: 'Precio:  $59.900,00 COP',
     },
     {
-      img: 'producto2.jpg',
+      img: 'https://res.cloudinary.com/dcut7k58h/image/upload/v1755134670/producto2_tsjb3y.jpg',
       nombre: 'pants ¨Spikes Pants¨',
       precio: 'Precio:  $95.900,00 COP',
-    },
+    },  
     {
-      img: 'producto3.jpg',
-      style: { position: 'relative' },
+      img: 'https://res.cloudinary.com/dcut7k58h/image/upload/v1755134671/producto3_mqu80a.jpg',
       nombre: 'Buzo Blanco ¨norbita¨',
       precio: 'Precio:  $45.900,00 COP',
     },
     {
-      img: 'producto4.jpg',
+      img: 'https://res.cloudinary.com/dcut7k58h/image/upload/v1755134670/producto4_q9axnk.jpg',
       nombre: 'Bandana Pants',
       precio: 'Precio:  $45.900,00 COP',
     },

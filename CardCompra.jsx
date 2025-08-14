@@ -13,7 +13,7 @@ function CardCompra({ producto }) {
 
   // Regresar a la página principal
   const handleRegresar = () => {
-    window.location.reload(); // Simple para volver a App, mejor con router
+    window.location.reload(); 
   };
 
   // Agregar producto al carrito
@@ -29,7 +29,7 @@ function CardCompra({ producto }) {
       cantidad: 1,
       id: producto.img + talla,
     };
-    // Si ya existe el producto con esa talla, suma cantidad
+
     const existe = carrito.find(p => p.id === item.id);
     let nuevoCarrito;
     if (existe) {
@@ -52,14 +52,6 @@ function CardCompra({ producto }) {
     localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
   };
 
-  // Actualizar cantidad
-  const handleActualizarCantidad = (id, cantidad) => {
-    const nuevoCarrito = carrito.map(p =>
-      p.id === id ? { ...p, cantidad: cantidad } : p
-    );
-    setCarrito(nuevoCarrito);
-    localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
-  };
 
   return (
     <div className={styles['card-compra']} style={{ textAlign: 'center', marginTop: '40px', position: 'relative' }}>
